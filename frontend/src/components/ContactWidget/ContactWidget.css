@@ -1,0 +1,76 @@
+/* Style for the contact widget container */
+.contact-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* High z-index to ensure it stays on top */
+}
+
+/* Style for the contact form itself */
+.contact-form {
+  border: 2px solid red; /* Just for testing */
+  z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+/* Style to show the form when it's active */
+.contact-widget .contact-form.active {
+  display: block; /* Show the form */
+}
+
+/* Style for the toggle button to show/hide the form */
+.toggle-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the close button inside the form */
+.close-btn {
+  background-color: #dc3545;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px; /* Spacing below the close button */
+}
+
+/* Hover effects for buttons */
+.toggle-btn:hover, .close-btn:hover {
+  opacity: 0.9;
+}
+
+/* Style for form inputs and textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Space between form fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the submit button */
+.contact-form button[type="submit"] {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #218838;
+}
